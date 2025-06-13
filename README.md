@@ -119,7 +119,3 @@ This project builds upon the work of many talented developers and researchers:
   [https://github.com/SebLague/Hydraulic-Erosion](https://github.com/SebLague/Hydraulic-Erosion)
 
 We are grateful for the open-source contributions and educational content that made this project possible.
-
----
-
-Let me know if you want a shorter version for a GitHub repo summary or a section for contributions, licensing, or citations.
