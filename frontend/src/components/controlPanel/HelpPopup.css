@@ -1,0 +1,69 @@
+.help-popup {
+  display: flex;
+  position: center;
+  width: 100%;
+  min-width: 400px;
+  height: 100%;
+  justify-content: center;
+  z-index: 999;
+}
+
+.help-popup-content {
+  display: flex;
+  flex-direction: column;
+  position: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  height: fit-content;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 999;
+  background-color: var(--control-bg-color);
+  color: var(--primary-text-color); 
+}
+
+.close-btn {
+  display: flex;
+  padding-bottom: 20px;
+  margin-right: 10px;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.help-popup, .help-popup-content {
+  border-radius: var(--border-radius);
+  max-height: 80vh; 
+}
+
+
+/* helppopup.css */
+.help-popup {
+ display: flex;
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 100%;
+ min-width: 400px;
+ height: 100%;
+ justify-content: center;
+ z-index: 999;
+}
+
+.help-popup-content {
+ display: flex;
+ flex-direction: column;
+ padding: 20px;
+ border-radius: 10px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ max-width: 500px;
+ height: fit-content;
+ max-height: 400px;
+ overflow-y: auto;
+ z-index: 999;
+ background-color: var(--control-bg-color);
+ color: var(--primary-text-color); 
+}

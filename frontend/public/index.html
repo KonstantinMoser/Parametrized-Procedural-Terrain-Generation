@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebGL 3D Terrain</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+  </head>
+  <body>
+    <div class="controls-container" style="margin-top: 10px; z-index:1000;">
+      <div class="control-label">Rotation</div>
+      <label class="switch-container">
+        <input id="rotation-toggle" type="checkbox" unchecked />
+        <span class="slider"></span>
+      </label>
+
+      <div class="control-label" style="margin-top: 10px;">Texture</div>
+      <label class="switch-container">
+        <input id="texture-toggle" type="checkbox" unchecked />
+        <span class="slider"></span>
+      </label>
+
+      <div class="control-label" style="margin-top: 10px; ">Exponent</div>
+      <input
+        type="number"
+        id="exponent-input"
+        min="-3.0"
+        max="10"
+        step="0.1" 
+        value="1"
+      />
+
+      <div class="control-label" style="margin-top: 10px;">Height Multiplier</div>
+      <input
+        type="range"
+        id="heightMultiplierSlider"
+        min="1"
+        max="100"
+        value="20"
+      />
+
+      </div>
+
+    </div>
+    <div id="root"></div>
+
+    <script type="javascript" src="./src/index.js" ></script>
+  </body>
+</html>

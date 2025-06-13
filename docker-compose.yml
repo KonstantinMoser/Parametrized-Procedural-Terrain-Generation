@@ -1,0 +1,38 @@
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb_container
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: terrainuser
+      MONGO_INITDB_ROOT_PASSWORD: t3rr4in.p4ssw0rd
+      MONGO_INITDB_DATABASE: terraindb
+    volumes:
+      - ./mongodb_data:/data/db
+
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "5000:5000"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: terrainuser
+      MONGO_INITDB_ROOT_PASSWORD: t3rr4in.p4ssw0rd
+      MONGO_INITDB_DATABASE: terraindb
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - mongodb
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "8080:80"
+    volumes:
+      - ./frontend:/app
+      - "/app/node_modules"
+    depends_on:
+      - backend
+

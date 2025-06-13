@@ -1,0 +1,64 @@
+/* controlPanel.css */
+.drag-handle {
+  cursor: grab;
+  display: flex;
+  justify-content: flex-end;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.drag-handle {
+  background-color: var(--accent-color); 
+  color: var(--background-color);
+  padding: 5px;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.fa-close {
+  color: var(--primary-light-color); 
+} 
+
+.drag-handle:hover {
+  cursor: grabbing;
+}
+
+.floating-panel {
+  background-color: var( --control-semitranparent-color);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border-radius: var(--border-radius);
+  font-family: var(--font-family);
+  color: var(--primary-text-color);
+  position: fixed; 
+  top: 60px;
+  left: 20px;
+  z-index: 10;
+  overflow: hidden;
+  width: auto;
+  max-width: 90%;
+}
+
+.segmented-control {
+  background-color:var(--control-secondary-bg-color);
+  border-radius: var(--border-radius);
+  color: var(--primary-light-color);
+  display: flex;
+  margin: 15px;
+  width:fit-content;
+}
+
+.segmented-control button {
+  background-color: transparent;
+  border: none;
+  padding: 5px 15px;
+  border-radius: var(--border-radius);
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  color: var(--primary-light-color);
+}
+
+.segmented-control button.active{
+  background-color: var(--accent-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+

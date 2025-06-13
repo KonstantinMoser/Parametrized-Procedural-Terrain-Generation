@@ -1,0 +1,55 @@
+/* app.css */
+div,
+h1,
+h2,
+label,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--primary-text-color); 
+}
+
+.main-content {
+  display: flex;
+  z-index: -1;
+}
+
+.theme-switch,
+.toggle-panel-button, 
+.show-history-button, 
+.clear-terrain-button {
+  display: flex;
+  color: var(--primary-text-color);
+  background-color: var(--control-semitranparent-color); 
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  top: 20px;
+  border-radius: var(--border-radius);
+  padding: 5px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle-panel-button { left: 20px; }
+.show-history-button { left: 60px; }
+.clear-terrain-button { left: 100px; }
+.theme-switch { left: 135px;  z-index: 999;  font-size: 18px;  }    
+
+.toggle-panel-button:hover, 
+.show-history-button:hover, 
+.clear-terrain-button:hover,
+.theme-switch:hover {
+  background-color: var(--hover-color);
+  color: #FFFFFF; 
+}
+.active {
+  background-color: var(--hover-color);
+  color: #FFFFFF; 
+}

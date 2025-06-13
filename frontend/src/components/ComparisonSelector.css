@@ -1,0 +1,30 @@
+.selector {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  font-size: 16px;
+  padding: 10px;
+  z-index: 9997;
+  right: 10px;
+  bottom: 20px;
+  color: var(--primary-text-color); 
+}
+
+.select, 
+.exit-button {
+  font-size: 12px;
+  padding: 5px 10px;
+  background-color:   var(--control-bg-color);
+  color: var(--primary-text-color); 
+  border-radius: var(--border-radius);
+  margin-bottom: 10px;
+  cursor: pointer; 
+  transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.select:hover, 
+.exit-button:hover {
+  background-color: var(--control-bg-color); 
+  border-color: var(--hover-color); 
+  box-shadow: 0 0 8px var(--hover-color); 
+}
