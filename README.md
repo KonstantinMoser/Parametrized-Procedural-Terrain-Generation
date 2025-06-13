@@ -4,7 +4,8 @@ This repository contains the source code for a master’s project focused on the
 
 This project was developed by Christian Skorski, Kalliopi Papadaki, and Konstantin Moser as part of our master at the University of Zurich.
 
----
+## Note on Repository Scope
+This repository currently includes only the frontend component of the project. The backend, which contains the core terrain generation logic and API implementation, has not been made public due to uncertainty around distribution rights and potential intellectual property restrictions.
 
 ## Overview
 
