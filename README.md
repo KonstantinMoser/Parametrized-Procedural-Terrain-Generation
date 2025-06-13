@@ -1,7 +1,3 @@
-Here's a polished and professional version of your README, tailored to reflect the depth of your master project. I’ve incorporated relevant context from your uploaded report as well:
-
----
-
 # Parametrized Procedural Terrain Generation
 
 This repository contains the source code for a master’s thesis project focused on the development of a modular, extensible, and interactive terrain generation tool. The tool leverages modern procedural generation techniques and exposes a RESTful API for programmatic use, while providing a web-based frontend for visualizing and manipulating the terrain.
