@@ -1,6 +1,8 @@
 # Parametrized Procedural Terrain Generation
 
-This repository contains the source code for a master’s thesis project focused on the development of a modular, extensible, and interactive terrain generation tool. The tool leverages modern procedural generation techniques and exposes a RESTful API for programmatic use, while providing a web-based frontend for visualizing and manipulating the terrain.
+This repository contains the source code for a master’s project focused on the development of a modular, extensible, and interactive terrain generation tool. The tool leverages modern procedural generation techniques and exposes a RESTful API for programmatic use, while providing a web-based frontend for visualizing and manipulating the terrain.
+
+This project was developed by Christian Skorski, Kalliopi Papadaki, and Konstantin Moser as part of our master at the University of Zurich.
 
 ---
 
