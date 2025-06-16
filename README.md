@@ -111,7 +111,7 @@ The backend exposes a set of endpoints for terrain-related operations:
 
 ## Acknowledgements
 
-This project builds upon the work of many talented developers and researchers:
+The project wouldn't have been as successful or at all possible without the following external resources:
 
 * WebGL height map integration:
   [https://webglfundamentals.org/webgl/lessons/webgl-qna-how-to-import-a-heightmap-in-webgl.html](https://webglfundamentals.org/webgl/lessons/webgl-qna-how-to-import-a-heightmap-in-webgl.html)
